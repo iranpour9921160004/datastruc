@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace datastruc
+{
+    internal class ProductModel
+    {
+        public long ID { get; set; }
+        public String Name { get; set; }
+        public bool IsDeleted { get; set; }
+        public decimal _Price { get; set; }
+        public double Miyane  { get; set; }
+    }
+}
