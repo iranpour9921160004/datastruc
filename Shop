@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace datastruc
+{
+    internal class Shop
+    {
+        List<long> Price = new List<long>();
+        public void Add_Product()
+        {
+            ProductModel A = new ProductModel();
+            Console.Write("ID :");
+            A.ID = Convert.ToInt64(Console.ReadLine());
+            if (Check_Unique_ID(A.ID) = true)
+            {
+                Console.Write("Name:");
+                A.Name = Console.ReadLine();
+                Console.Write("Price:");
+                A._Price = decimal.Parse(Console.ReadLine());
+                Price.Add(Convert.ToInt64(A._Price));
+                Console.Write("Miyane:");
+                A.Miyane = Mediume_calculation(A._Price);
+
+            }
+            else
+            {
+                Console.WriteLine("This ID not available");
+            }
+        }
+        public bool Check_Unique_ID(ProductModel B)
+        {
+            
+        }
+    }
+}
