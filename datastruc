@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace datastruc
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int menu;
+            Console.WriteLine("1)Show all product\n2)Add product\n3)Search\n4)Exit");
+            menu = Convert.ToInt32(Console.ReadLine("what do you want to do?"));
+            Console.WriteLine(menu);
+            switch (menu)
+            {
+                case 1:
+                    {
+                        
+                    }
+                case 2:
+                    {
+
+                    }
+                case 3:
+                    {
+
+                    }
+                case 4:
+                    {
+
+                    }
+                default:
+                    Console.WriteLine("This item is not exist");
+            }
+            Console.ReadKey();
+        }   
+    }
+}
