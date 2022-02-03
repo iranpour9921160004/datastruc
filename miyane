@@ -1,0 +1,24 @@
+        public decimal Miyane(List<long> P)
+        {
+            decimal myne;
+            int m = P.Count();
+            for (int i = 1; i < m; i++)
+            {
+                decimal tmp = P[i];
+                int idx = i;
+                while (tmp<P[idx-1] && idx>1)
+                {
+                    idx -= 1;
+                }
+                P[idx] = tmp;
+            }
+            if (m%2==0)
+            {
+                myne = (P[m / 2] + P[(m / 2) + 1]) / 2;
+            }
+            else
+            {
+                myne = P[m / 2];
+            }
+            return myne;
+        }
