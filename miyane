@@ -1,4 +1,4 @@
-        public decimal Miyane(List<long> P)
+             public decimal Miyane(List<decimal> P)
         {
             decimal myne;
             int m = P.Count();
